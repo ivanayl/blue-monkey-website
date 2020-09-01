@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Locations | Blue Monkey Tea</title>
+        
+        <!-- External Links to CSS files -->
+        <link rel = "stylesheet" media = "all" type = "text/css" href = "css/styles.css">
+        <link rel = "stylesheet" media = "all" type = "text/css" href = "css/styles.css">
+
+        <!-- External Links to JS files -->
+        <script src = "js/jquery-3.4.1.min.js"></script>
+        <script src = "js/scripts.js"></script>
+        <script src = "http://code.highcharts.com/highcharts.js"></script>
+        <script src = "http://code.highcharts.com/modules/exporting.js"></script>
+
+        <script>
+        $(function(){
+            $('#container-graph').highcharts({
+                 chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Popular Times'
+        },
+        xAxis: {
+            categories: ['11AM', '12PM', '1PM', '2PM', '3PM', '4PM', '5PM', '6PM']
+        },
+        yAxis: {
+            title: {
+                text: 'Average Number of Shoppers'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [{
+            name: 'Monday to Saturday',
+            data: [5, 10, 8, 24, 5, 7, 32, 16]
+        }, {
+            name: 'Sunday',
+            data: [null, 50, 48, 25, 28, 27]
+        }]
+            });
+        });
+        </script>
+    </head>
+    
+    <body>
+        <div id = "container">
+            <div id = "top_row">
+                <img src = images/bluemonkeytea_logo_transparent_sharp.png alt = "Logo" width = 100 height = 100>
+                <nav>
+                    <a href = "index.html">Home</a>
+                    <a href = "ourstory.html">Our Story</a>
+                    <a class = "selected" href = "locations.html">Locations</a>
+                    <a href= "teas.html">Teas</a>
+                    <a href = "coffee.html">Coffee</a>
+                    <a href = "gallery.html">Gallery</a>
+                    <a href = "contact.html">Contact Us</a>
+                </nav>
+            </div>
+            
+            <div id = "content-locations">
+                <hr>
+                <h1>Our Locations</h1>
+                <hr>
+                <table>
+                    <tr>
+                        <td><br><img src = "images/pittsburgh-squirrel-hill-1.gif" alt = "Store Picture" width = 350 height = 200></td>
+                        <td><br><iframe id = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.6900811123337!2d-79.92238568460343!3d40.43786097936267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f200108c553d%3A0xa62923c0d2116c57!2sTea%20Pittsburgh%20Blue%20Monkey%20Tea!5e0!3m2!1sen!2sus!4v1585285368682!5m2!1sen!2sus" width="350" height="200" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></td>
+                    </tr>
+                    <tr>
+                        <td><h4 class = "table">Pittsburgh (Squirrel Hill)</h4></td>
+                        <td><h4 class = "table">Hours of Operation</h4></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5872 Forbes Avenue</td>
+                        <td>Monday through Friday: 11AM to 7PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Pittsburgh, PA 15217</td>
+                        <td>Saturday: 11AM to 7PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Phone: (412) 422-1606
+                        </td>
+                        <td>Sunday: 12PM to 7PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email: <a href = "mailto:100teacups@gmail.com">100teacups@gmail.com</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href = "index.html">Website</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><h4 class = "table">Carnegie (South Hills)</h4></td>
+                        <td><h4 class = "table">Now Closed</h4></td>
+                    </tr>
+                </table>
+                <br>
+                
+                <div id = "container-graph"></div>
+            </div>
+            
+            <div id = "sidebar">
+                <h2>Loose Leaf Tea</h2>
+                <h4>We feature over 400 varieties!</h4>
+                <a href = "teas.html">Explore Our Teas</a>
+                <br><br>
+                <h2>Gourmet Coffee</h2>
+                <h4>We carry over 30 types of coffee beans!</h4>
+                <a href = "coffee.html">Explore Our Coffee</a>
+            </div>
+            
+            <footer>
+                <a href = "https://www.facebook.com/TeaPittsburgh/"><img src = "images/iconfinder_facebook-01-01_3066961.png" width = 30 height = 30 alt = "Facebook"></a>
+                <a href = "https://www.instagram.com/bluemonkeytea/"><img src = "images/iconfinder_instagram-01-01_3066990.png" width = 30 height = 30 alt = "Instagram"></a>
+                <a href = "mailto:100teacups@gmail.com"><img src = "images/iconfinder_mail-01-01_3066965.png" alt = "Email" width = 30 height = 30></a>
+                <p>Images Credited to https://www.pittsburghcuppa.com/info.html</p>
+            </footer>
+        </div>
+    </body>
+</html>

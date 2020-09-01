@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Contact | Blue Monkey Tea Pittsburgh</title>
+        
+        <!-- External Links to CSS files -->
+        <link rel = "stylesheet" media = "all" type = "text/css" href = "css/jquery-ui.css">
+        <link rel = "stylesheet" media = "all" type = "text/css" href = "css/styles.css">
+        
+        <!-- External Links to JS files -->
+        <script src = "js/jquery-3.4.1.min.js"></script>
+        <script src = "js/scripts.js"></script>
+        <script src = "js/jquery-ui.js"></script>
+        <script>
+            $(function() {
+                $( "#tabs" ).tabs();
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div id = "container">
+            <div id = "top_row">
+                <img src = images/bluemonkeytea_logo_transparent_sharp.png alt = "Logo" width = 100 height = 100>
+                <nav>
+                    <a href = "index.html">Home</a>
+                    <a href = "ourstory.html">Our Story</a>
+                    <a href = "locations.html">Locations</a>
+                    <a href= "teas.html">Teas</a>
+                    <a href = "coffee.html">Coffee</a>
+                    <a href = "gallery.html">Gallery</a>
+                    <a class = "selected" href = "contact.html">Contact Us</a>
+                </nav>
+            </div>
+            
+            <div id = "content">
+                <hr>
+                <h1>Contact Us</h1>
+                <hr>
+                <p>Please fill out this form and we'll get back to you as soon as we can!</p>
+                <form onsubmit = "return validate()" action = "mailto:100teacups@gmail.com">
+                    <fieldset>
+                    <label>Name*</label><br>
+                    <input type = "text" size = "20" maxlength="250" placeholder = "Your Name" required><br/><br/>
+                    <label>Zipcode</label><br>
+                    <input type = "text" size = "20" maxlength = "5" id = "zipcode"><br/><br/>
+                    <label>Email address*</label><br/>
+                    <input type = "email" size = "20" maxlength="250" placeholder = "abc@defg.com" required><br/><br/>
+                    <input type = "checkbox">I would like to subscribe to Blue Monkey Tea’s coupon weekly flyer<br/><br/>
+                    <input type ="image" src="images/submit.png" alt="Submit">
+                    </fieldset>
+                </form>
+            </div>
+            
+            <div id = "sidebar">
+                <h2>Loose Leaf Tea</h2>
+                <h4>We feature over 400 varieties!</h4>
+                <a href = "teas.html">Explore Our Teas</a>
+                <br><br>
+                <h2>Gourmet Coffee</h2>
+                <h4>We carry over 30 types of coffee beans!</h4>
+                <a href = "coffee.html">Explore Our Coffee</a>
+            </div>
+            
+            <footer>
+                <a href = "https://www.facebook.com/TeaPittsburgh/"><img src = "images/iconfinder_facebook-01-01_3066961.png" width = 30 height = 30 alt = "Facebook"></a>
+                <a href = "https://www.instagram.com/bluemonkeytea/"><img src = "images/iconfinder_instagram-01-01_3066990.png" width = 30 height = 30 alt = "Instagram"></a>
+                <a href = "mailto:100teacups@gmail.com"><img src = "images/iconfinder_mail-01-01_3066965.png" alt = "Email" width = 30 height = 30></a>
+            </footer>
+        </div>
+    </body>
+</html>

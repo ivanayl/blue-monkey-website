@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Coffee | Blue Monkey Tea Pittsburgh</title>
+        
+        <!-- External Links to CSS files -->
+        <link rel = "stylesheet" media = "all" type = "text/css" href = "css/jquery-ui.css">
+        <link rel = "stylesheet" media = "all" type = "text/css" href = "css/styles.css">
+        
+        <!-- External Links to JS files -->
+        <script src = "js/jquery-3.4.1.min.js"></script>
+        <script src = "js/scripts.js"></script>
+        <script src = "js/jquery-ui.js"></script>
+        
+        <script>
+            $(function() {
+                $( "#tabs" ).tabs();
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div id = "container">
+            <div id = "top_row">
+                <img src = images/bluemonkeytea_logo_transparent_sharp.png alt = "Logo" width = 100 height = 100>
+                <nav>
+                    <a href = "index.html">Home</a>
+                    <a href = "ourstory.html">Our Story</a>
+                    <a href = "locations.html">Locations</a>
+                    <a href= "teas.html">Teas</a>
+                    <a class = "selected" href = "coffee.html">Coffee</a>
+                    <a href = "gallery.html">Gallery</a>
+                    <a href = "contact.html">Contact Us</a>
+                </nav>
+            </div>
+            
+            <div id = "content">
+                <hr>
+                <h1>Our Gourmet Coffees</h1>
+                <hr>
+                <div id = "tabs">
+                    <ul>
+                        <li><a class = "color" href = "#tabs-1">Non-Flavored Coffee</a></li>
+                        <li><a class = "color" href = "#tabs-2">Flavored Coffee</a></li>
+                        <li><a class = "color" href = "#tabs-3">Decaffeinated Coffee</a></li>
+                        <li><a class = "color" href = "#tabs-4">Coffee Gift Pack</a></li>
+                    </ul>
+                    
+                    <div id = "tabs-1">
+                        <ul>
+                            <li>Colombian Supremo Coffee</li>
+                            <li>Kona Blend Coffee</li>
+                            <li>Organic Fair Trade Peruvian Coffee</li>
+                            <li>Sumatra Dark Blend Coffee</li>
+                            <li>Espresso Roast Coffee</li>
+                            <li>Rocket Fuel Extra Caffeine Coffee</li>
+                        </ul>
+                    </div>
+                    
+                    <div id = "tabs-2">
+                        <ul>
+                            <li>Butter Rum Coffee</li>
+                            <li>Amaretto Coffee</li>
+                            <li>Coconut Cream Coffee</li>
+                            <li>Death By Chocolate Coffee</li>
+                            <li>Hazelnut Supreme Coffee</li>
+                            <li>Irish Cream Coffee</li>
+                            <li>Maple Walnut Coffee</li>
+                            <li>Orange Coffee</li>
+                            <li>Pumpkin Spice Coffee</li>
+                        </ul>
+                    </div>
+                    
+                    <div id = "tabs-3">
+                        <ul>
+                            <li>Decaf Colombian Coffee</li>
+                            <li>Decaf. Hazelnut Coffee</li>
+                            <li>Decaf. Pumpkin Spice Coffee</li>
+                            <li>Decaf. Death By Chocolate Coffee</li>
+                            <li>Decaffeinated Espresso Coffee</li>
+                        </ul>
+                    </div>
+                    
+                    <div id = "tabs-4">
+                        <ul>
+                            <li>Around The World In 12 Coffees</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>Allergen Alert: These products are made in manufacturing facilities that uses nut ingredients in some products</p>
+            </div>
+            
+            <div id = "sidebar">
+                <h2>Loose Leaf Tea</h2>
+                <h4>We feature over 400 varieties!</h4>
+                <a href = "teas.html">Explore Our Teas</a>
+                <br><br>
+                <h2>Gourmet Coffee</h2>
+                <h4>We carry over 30 types of coffee beans!</h4>
+                <a href = "coffee.html">Explore Our Coffee</a>
+            </div>
+            
+            <footer>
+                <a href = "https://www.facebook.com/TeaPittsburgh/"><img src = "images/iconfinder_facebook-01-01_3066961.png" width = 30 height = 30 alt = "Facebook"></a>
+                <a href = "https://www.instagram.com/bluemonkeytea/"><img src = "images/iconfinder_instagram-01-01_3066990.png" width = 30 height = 30 alt = "Instagram"></a>
+                <a href = "mailto:100teacups@gmail.com"><img src = "images/iconfinder_mail-01-01_3066965.png" alt = "Email" width = 30 height = 30></a>
+            </footer>
+        </div>
+    </body>
+</html>
