@@ -1,0 +1,160 @@
+body{
+    background-color: #8e9aaf;
+}
+
+#container{
+    margin: 10px auto;
+}
+
+#update{
+    background-color: #efd3d7;
+    color: #8e9aaf; 
+    font-weight: bold;
+    text-align: center;
+}
+
+h1{
+    font-family:'Century Gothic';
+    font-size: 20px;
+}
+
+h2{
+    font-family:'Century Gothic';
+    font-size: 18px;
+}
+
+h3{
+    font-family:'Century Gothic';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h4{
+    font-family:'Century Gothic';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+p{
+    font-family:'Verdana';
+    font-size: 12px;
+}
+
+#top_row{
+    border-bottom: 1px solid #efd3d7;
+    padding: 1em .5em .5em .5em;
+    
+}
+
+#top_row nav{
+    float: right;
+    padding: 1em .5em .5em .5em;
+}
+
+#top_row nav a{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 15px;
+    color: #8e9aaf;
+    background-color: #dee2ff;
+}
+
+#top_row nav a.selected{
+    background: #efd3d7;
+    color: #8e9aaf;
+}
+
+#top_row nav a:hover{
+    background: #efd3d7;
+    color: #8e9aaf;
+}
+
+#content{
+    background-color: #cbc0d3;
+    float: left;
+    width: 69%;
+    text-align: center;
+    align-content: center;
+    margin: 0;
+    padding: 1em;
+    border-right: 1px dotted #ccc;
+}
+
+.color{
+    text-decoration: none;
+    background-color: #feeafa;
+    font-family:'Verdana';
+    font-size: 12px;
+    padding: 10px;
+}
+
+#content-locations{
+    background-color: #cbc0d3;
+    float: left;
+    width: 69%;
+    text-align: left;
+    margin: 0;
+    padding: 1em;
+    border-right: 1px dotted #ccc;
+}
+
+#content-locations h1{
+    text-align: center;
+}
+
+#sidebar{
+    background-color: #dee2ff;
+    float: left;
+    width: 25%;
+    text-align: left;
+    margin: 0;
+    padding: 1em;
+    border-right: 1px dotted #ccc;
+}
+
+#sidebar a{
+    text-decoration: none;
+    background-color: #feeafa;
+    font-family:'Verdana';
+    font-size: 12px;
+    padding: 10px;
+}
+
+footer{
+    clear: both;
+    margin: 0;
+    padding: .5em;
+    text-align: center;
+    background: #efd3d7;
+}
+
+#content-locations table{
+    width: 100%;
+    margin: 10px auto;
+}
+
+#content-locations td{
+    padding: 2px;
+    text-align: left;
+}
+
+#content-locations h4{
+    text-align: left;
+}
+
+li{
+    text-align: left;
+}
+.space{
+    margin: 2em 0;
+}
+
+td{
+    font-family: 'Verdana';
+    font-size: 12px;
+}
+
+#table{
+    text-decoration: underline;
+}
